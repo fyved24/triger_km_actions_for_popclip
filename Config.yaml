@@ -1,0 +1,33 @@
+name: 触发KM动作
+identifier: com.ironz.pop
+actions:
+  - title: KM0
+    identifier: action0
+    applescript_file: trigerKm.applescript
+    requirements: 
+      - copy
+      - option-enabled0=1
+  - title: KM1
+    identifier: action1
+    applescript_file: trigerKm.applescript
+    requirements: 
+      - copy
+      - option-enabled1=1
+options:
+  - identifier: actionname0
+    type: string
+    label: 动作名0
+    default_value: action0
+  - identifier: enabled0
+    type: boolean
+    label: 启用动作0
+    default_value: 1
+  - identifier: actionname1
+    type: string
+    label: 动作名1
+    default_value: action0
+  - identifier: enabled1
+    type: boolean
+    label: 启用动作1
+    default_value: 1
+    
